@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Build the Future - A responsive digital experience showcasing modern web design principles with accessibility and inclusive design">
+    <meta name="theme-color" content="#A0D4E0">
+    <title>Build the Future - Responsive Web Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:wght@700&family=Roboto:wght@400;500&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon" aria-hidden="true">🚀</span>
+                <span class="logo-text">DecodeLabs</span>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#vision" class="nav-link">Vision</a></li>
+                <li><a href="#content" class="nav-link">Content</a></li>
+                <li><a href="#footer" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero" role="banner">
+        <div class="hero-content">
+            <h1>Build the Future</h1>
+            <p class="tagline">Crafting responsive digital experiences with accessibility at the core</p>
+            <button class="cta-button" aria-label="Learn more about our approach">Learn More</button>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+            <div class="mockup-container">
+                <div class="device-frame">
+                    <div class="device-screen"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="content" class="main-content" role="main">
+        <!-- Vision Section -->
+        <section id="vision" class="vision-section" aria-labelledby="vision-heading">
+            <div class="section-container">
+                <h2 id="vision-heading">The Vision: Architecting for the Mobile Web</h2>
+                
+                <div class="vision-grid">
+                    <article class="vision-card" aria-label="Core Goal - Mobile-first design approach">
+                        <h3>Core Goal</h3>
+                        <p>Construct a digital experience that honors the Mobile-First paradigm, ensuring seamless interaction across all devices.</p>
+                    </article>
+                    
+                    <article class="vision-card" aria-label="The Philosophy - Web as dynamic system">
+                        <h3>The Philosophy</h3>
+                        <p>The web is a dynamic, inclusive information system. We build for everyone, everywhere, on any device.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Standards Section -->
+        <section class="standards-section" aria-labelledby="standards-heading">
+            <div class="section-container">
+                <h2 id="standards-heading">The Standards</h2>
+                
+                <div class="standards-grid">
+                    <div class="standard-card">
+                        <h3>Semantic Integrity</h3>
+                        <p><strong>Code for AI and Accessibility</strong></p>
+                        <p>Proper HTML structure enables screen readers and AI systems to understand content correctly.</p>
+                    </div>
+                    
+                    <div class="standard-card">
+                        <h3>2025 UI/UX Compliance</h3>
+                        <p><strong>Warm, Grounded Aesthetics</strong></p>
+                        <p>Moving beyond sterile tech design toward human-centered interfaces that feel welcoming and trustworthy.</p>
+                    </div>
+                    
+                    <div class="standard-card">
+                        <h3>Universal Access</h3>
+                        <p><strong>Strict WCAG Adherence</strong></p>
+                        <p>WCAG 2.1 Level AA compliance ensures our interface works for users with diverse abilities and assistive technologies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Toolkit Section -->
+        <section class="toolkit-section" aria-labelledby="toolkit-heading">
+            <div class="section-container">
+                <h2 id="toolkit-heading">The Toolkit: Your Raw Materials</h2>
+                
+                <div class="toolkit-grid">
+                    <article class="toolkit-card" aria-label="HTML5: The Infrastructure">
+                        <div class="toolkit-icon" aria-hidden="true">🏗️</div>
+                        <h3>HTML5: The Infrastructure</h3>
+                        <p>Semantic landmarks and structural meaning. Not just divs, but the right element for the right job.</p>
+                    </article>
+                    
+                    <article class="toolkit-card" aria-label="CSS3: The Skin">
+                        <div class="toolkit-icon" aria-hidden="true">🎨</div>
+                        <h3>CSS3: The Skin</h3>
+                        <p>Responsive styling using Grid, Flexbox, and Container Queries for fluid layouts across all viewports.</p>
+                    </article>
+                    
+                    <article class="toolkit-card" aria-label="JavaScript: The Logic">
+                        <div class="toolkit-icon" aria-hidden="true">⚙️</div>
+                        <h3>JavaScript: The Logic</h3>
+                        <p>Basic state management and interactive functionality that enhances user experience without sacrificing accessibility.</p>
+                    </article>
+                </div>
+                
+                <div class="mandate-box" role="complementary" aria-label="Project Mandate">
+                    <p><strong>The Mandate:</strong> No Frameworks. Master the fundamentals first.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section" aria-labelledby="features-heading">
+            <div class="section-container">
+                <h2 id="features-heading">Key Features</h2>
+                
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <h3>Mobile-First Design</h3>
+                        <p>Built from the ground up for small screens, progressively enhanced for larger displays.</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <h3>Responsive Layout</h3>
+                        <p>Adapts seamlessly from 375px phones to 1920px desktops using modern CSS techniques.</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <h3>Accessibility First</h3>
+                        <p>WCAG 2.1 AA compliant with semantic HTML, proper color contrast, and keyboard navigation.</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <h3>Fast & Lightweight</h3>
+                        <p>No heavy frameworks—vanilla HTML, CSS, and JavaScript for optimal performance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta-section" aria-labelledby="cta-heading">
+            <div class="section-container cta-content">
+                <h2 id="cta-heading">Ready to Build?</h2>
+                <p>Start your journey as a full-stack developer with a rock-solid foundation in responsive design.</p>
+                <button class="cta-button primary" id="primaryCTA" aria-label="Get started with the project">Get Started</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer" role="contentinfo" aria-label="Site footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>DecodeLabs</h3>
+                    <p>Internship Program 2026</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#vision">Vision</a></li>
+                        <li><a href="#content">Content</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" aria-label="Privacy Policy">Privacy Policy</a></li>
+                        <li><a href="#" aria-label="Terms of Service">Terms of Service</a></li>
+                        <li><a href="#" aria-label="Accessibility Statement">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 DecodeLabs. All rights reserved. | <a href="#" aria-label="Accessibility statement">Accessibility Statement</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
