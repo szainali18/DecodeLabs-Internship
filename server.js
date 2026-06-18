@@ -1,7 +1,7 @@
 /**
  * DecodeLabs – Project 2: Backend API Development
  * Express REST API with GET/POST/PUT/DELETE endpoints,
- * input validation, and proper HTTP status codes.
+ * input validation and proper HTTP status codes.
  */
 
 const express    = require('express');
