@@ -11,7 +11,7 @@
   <!-- HEADER / NAV -->
   <header>
     <nav class="navbar">
-      <div class="logo">Decode<span>Labs</span></div>
+      <div class="logo"><img src="DecodeLabs.png" class="site-logo" alt="DecodeLabs logo">Decode<span>Labs</span></div>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
         <li><a href="tasks.html">Tasks</a></li>
@@ -32,11 +32,40 @@
       </div>
       <div class="hero-graphic" aria-hidden="true">
         <svg width="320" height="200" viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- background panel (keeps original tone) -->
           <rect x="0" y="0" width="320" height="200" rx="12" fill="#eef2ff"></rect>
+
+          <!-- bubbles -->
+          <g transform="translate(20,12)">
+            <circle cx="40" cy="40" r="28" fill="#A0D4E0" opacity="0.18"></circle>
+            <circle cx="180" cy="28" r="18" fill="#A5856E" opacity="0.12"></circle>
+            <circle cx="120" cy="110" r="36" fill="#6b7280" opacity="0.08"></circle>
+            <circle cx="220" cy="98" r="14" fill="#A0D4E0" opacity="0.14"></circle>
+            <circle cx="60" cy="130" r="10" fill="#A5856E" opacity="0.16"></circle>
+          </g>
+
+          <!-- circuit-like traces + nodes -->
+          <g transform="translate(24,28)" stroke="#6b7280" stroke-width="2" stroke-linecap="round" fill="none">
+            <path d="M6 40 h48 a4 4 0 0 1 4 4 v18 h36" stroke-opacity="0.7"></path>
+            <path d="M84 30 v-14 h40" stroke-opacity="0.6"></path>
+            <path d="M160 60 h28 a6 6 0 0 1 6 6 v20" stroke-opacity="0.6"></path>
+            <path d="M48 120 h80" stroke-opacity="0.5"></path>
+          </g>
+
+          <!-- circuit nodes (LED-like) -->
+          <g transform="translate(24,28)">
+            <circle cx="6" cy="40" r="4" fill="#A5856E" stroke="#fff" stroke-width="0.8"></circle>
+            <circle cx="58" cy="40" r="4" fill="#A0D4E0" stroke="#fff" stroke-width="0.8"></circle>
+            <circle cx="124" cy="16" r="4" fill="#6b7280" stroke="#fff" stroke-width="0.8"></circle>
+            <circle cx="196" cy="86" r="4" fill="#A0D4E0" stroke="#fff" stroke-width="0.8"></circle>
+            <circle cx="128" cy="120" r="4" fill="#A5856E" stroke="#fff" stroke-width="0.8"></circle>
+          </g>
+
+          <!-- subtle panel lines to preserve original structure -->
           <g transform="translate(20,16)">
-            <rect x="0" y="0" width="260" height="24" rx="6" fill="#fff" stroke="#dbeafe"></rect>
-            <rect x="0" y="42" width="180" height="14" rx="4" fill="#fff" stroke="#dbeafe"></rect>
-            <rect x="0" y="68" width="220" height="14" rx="4" fill="#fff" stroke="#dbeafe"></rect>
+            <rect x="0" y="0" width="260" height="24" rx="6" fill="#fff" opacity="0.04"></rect>
+            <rect x="0" y="42" width="180" height="14" rx="4" fill="#fff" opacity="0.03"></rect>
+            <rect x="0" y="68" width="220" height="14" rx="4" fill="#fff" opacity="0.03"></rect>
           </g>
         </svg>
       </div>
@@ -84,20 +113,25 @@
   <footer class="site-footer">
     <div class="footer-inner container">
       <div class="brand">
-        <div class="logo">Decode<span>Labs</span></div>
+        <a href="index.html" class="brand-link">
+          <div class="logo">Decode<span>Labs</span></div>
+        </a>
         <p class="muted">Full Stack Industrial Training · 2026</p>
       </div>
 
       <div class="social">
-        <button id="themeToggle" class="icon-btn" title="Toggle theme">🎨</button>
-        <a class="social-link" href="#" aria-label="GitHub">
+        
+        <!-- Replace href values with your actual profile/logo links -->
+        <a class="social-link" href="https://github.com/szainali18" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.38 7.86 10.9.57.1.78-.25.78-.55 0-.27-.01-1-.02-1.95-3.2.7-3.88-1.54-3.88-1.54-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.67 1.24 3.32.95.1-.74.4-1.24.73-1.52-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.3 1.18-3.11-.12-.29-.51-1.47.11-3.06 0 0 .96-.31 3.14 1.18a10.9 10.9 0 012.86-.38c.97 0 1.95.13 2.86.38 2.18-1.49 3.14-1.18 3.14-1.18.62 1.59.23 2.77.11 3.06.73.81 1.18 1.85 1.18 3.11 0 4.43-2.71 5.4-5.29 5.69.41.36.77 1.08.77 2.18 0 1.58-.01 2.85-.01 3.24 0 .3.21.66.79.55A11.52 11.52 0 0023.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
         </a>
-        <a class="social-link" href="#" aria-label="LinkedIn">
+        <a class="social-link" href="https://www.linkedin.com/in/syed-zain-ali-shah-a1910536b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.22 8h4.56V24H.22V8zM8.98 8h4.37v2.16h.06c.61-1.16 2.09-2.39 4.3-2.39 4.6 0 5.45 3.03 5.45 6.97V24h-4.6v-7.56c0-1.8-.03-4.11-2.5-4.11-2.5 0-2.88 1.95-2.88 3.98V24H8.98V8z"/></svg>
         </a>
-        <a class="social-link" href="#" aria-label="Twitter">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0012.07 8v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+        <a class="social-link" href="https://www.instagram.com/your-handle" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zM12 7.5A4.5 4.5 0 1 0 12 16.5 4.5 4.5 0 1 0 12 7.5zm0 2a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM17.5 6A1 1 0 1 1 17.5 4a1 1 0 0 1 0 2z"/>
+          </svg>
         </a>
       </div>
 
