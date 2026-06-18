@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DecodeLabs | Tasks</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Decode<span>Labs</span></div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tasks.html">Tasks</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="tasks-section">
+      <h2>Task Manager</h2>
+      <p class="section-sub">Add, view, and manage your tasks.</p>
+
+      <div class="task-form card">
+        <input type="text" id="taskInput" placeholder="Enter a new task..." maxlength="120" aria-label="Task input" />
+        <select id="prioritySelect" aria-label="Priority">
+          <option value="low">Low</option>
+          <option value="medium" selected>Medium</option>
+          <option value="high">High</option>
+        </select>
+        <button class="btn-primary" id="addTaskBtn">Add Task</button>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="high">High</button>
+        <button class="filter-btn" data-filter="medium">Medium</button>
+        <button class="filter-btn" data-filter="low">Low</button>
+      </div>
+
+      <ul class="task-list" id="taskList" aria-live="polite">
+        <!-- Tasks rendered by JS -->
+      </ul>
+      <p class="empty-msg" id="emptyMsg">No tasks yet. Add one above!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>DecodeLabs &copy; 2026 · Full Stack Industrial Training · Batch 2026</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

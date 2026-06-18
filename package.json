@@ -1,0 +1,16 @@
+{
+  "name": "decodelabs-fullstack",
+  "version": "1.0.0",
+  "description": "DecodeLabs Industrial Training – Full Stack Projects 1-3",
+  "scripts": {
+    "start":    "node server.js",
+    "start:db": "node server_db.js",
+    "dev":      "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nedb-promises": "^6.2.1"
+  }
+}
